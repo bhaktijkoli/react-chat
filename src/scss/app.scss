@@ -2,3 +2,16 @@ body {
   background-color: whitesmoke;
   margin:0px;
 }
+.panel, .panel-heading {
+  border-radius: 0px !important;
+}
+.chat-form {
+  position: fixed;
+  bottom: 0;
+}
+.chat-form .form-control {
+  border-radius: 0px;
+}
+.chat-form .btn {
+  border-radius: 0px;
+}

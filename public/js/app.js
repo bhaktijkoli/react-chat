@@ -7763,9 +7763,37 @@ var App = function (_Component) {
         'div',
         { className: 'section-start' },
         _react2.default.createElement(
-          'h1',
-          null,
-          this.state.name
+          'div',
+          { className: 'panel panel-primary' },
+          _react2.default.createElement(
+            'div',
+            { className: 'panel-heading' },
+            _react2.default.createElement(
+              'h4',
+              null,
+              'React Chat',
+              _react2.default.createElement(
+                'small',
+                null,
+                '\xA0\xA0\xA0',
+                this.state.name
+              )
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'input-group chat-form' },
+          _react2.default.createElement('input', { id: 'msg', type: 'text', className: 'form-control', name: 'msg', placeholder: 'Enter your message.' }),
+          _react2.default.createElement(
+            'span',
+            { className: 'input-group-btn' },
+            _react2.default.createElement(
+              'button',
+              { className: 'btn btn-success', type: 'button' },
+              'Send'
+            )
+          )
         ),
         _react2.default.createElement(_NameModal2.default, { id: 'nameModal', update: this.updateName.bind(this) })
       );
@@ -7936,7 +7964,7 @@ exports = module.exports = __webpack_require__(31)(undefined);
 
 
 // module
-exports.push([module.i, "body {\n  background-color: whitesmoke;\n  margin: 0px; }\n", ""]);
+exports.push([module.i, "body {\n  background-color: whitesmoke;\n  margin: 0px; }\n\n.panel, .panel-heading {\n  border-radius: 0px !important; }\n\n.chat-form {\n  position: fixed;\n  bottom: 0; }\n\n.chat-form .form-control {\n  border-radius: 0px; }\n\n.chat-form .btn {\n  border-radius: 0px; }\n", ""]);
 
 // exports
 
