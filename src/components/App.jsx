@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import NameModal from './NameModal.jsx'
+import Content from './Content.jsx'
 
 class App extends Component {
   constructor() {
@@ -15,18 +16,13 @@ class App extends Component {
         <div className="panel panel-primary">
           <div className="panel-heading"><h4>React Chat<small>&nbsp;&nbsp;&nbsp;{this.state.name}</small></h4></div>
         </div>
-        <div className="input-group chat-form">
-          <input id="msg" type="text" className="form-control" name="msg" placeholder="Enter your message."/>
-          <span className="input-group-btn">
-              <button className="btn btn-success" type="button">Send</button>
-            </span>
-          </div>
-          <NameModal id="nameModal" update={this.updateName.bind(this)}/>
-        </div>
-      )
-    }
-    updateName(name) {
-      this.setState({name:name})
-    }
+        <Content name={this.state.name}/>
+        <NameModal id="nameModal" update={this.updateName.bind(this)}/>
+      </div>
+    )
   }
-  export default App;
+  updateName(name) {
+    this.setState({name:name})
+  }
+}
+export default App;

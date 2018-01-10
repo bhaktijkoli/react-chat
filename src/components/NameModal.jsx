@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 
 class NameModal extends Component {
   componentDidMount() {
-    $(this.refs.modal).modal('show');
+    window.changeName = () => {
+      $(this.refs.modal).modal('show');
+    }
+    window.changeName();
   }
   render() {
     return(
