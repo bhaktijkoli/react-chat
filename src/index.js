@@ -1,4 +1,5 @@
-window.$ = require('jquery');
+window.$ = window.jQuery = require('jquery');
+require('./scripts/bootstrap.min');
 
 import React from 'react';
 import ReactDOM from 'react-dom';
