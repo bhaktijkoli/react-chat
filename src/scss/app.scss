@@ -3,6 +3,7 @@ body {
   margin:0px;
 }
 .panel, .panel-heading {
+  margin: 0px !important;
   border-radius: 0px !important;
 }
 .chat-form {
@@ -14,4 +15,12 @@ body {
 }
 .chat-form .btn {
   border-radius: 0px;
+}
+.message-list {
+  margin: 10px;
+}
+.message-list p{
+  padding: 5px 20px 5px 5px;
+  width: fit-content;
+  color: white;
 }
